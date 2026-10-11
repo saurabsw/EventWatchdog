@@ -1,0 +1,74 @@
+services:
+  victoriametrics:
+    image: victoriametrics/victoria-metrics:v1.101.0
+    container_name: eventwatchdog-victoriametrics
+    ports:
+      - "127.0.0.1:8428:8428"
+    volumes:
+      - vmdata:/storage-data
+    command:
+      - "-storageDataPath=/storage-data"
+      - "-retentionPeriod=30d"
+      - "-httpListenAddr=:8428"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8428/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: eventwatchdog-api
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      - APP_HOST=0.0.0.0
+      - APP_PORT=8000
+      - ENVIRONMENT=docker
+      - DATABASE_URL=sqlite:////app/data/app.db
+      - VICTORIAMETRICS_URL=http://victoriametrics:8428
+      - EVALUATION_INTERVAL_SECONDS=15
+    volumes:
+      - appdata:/app/data
+    depends_on:
+      victoriametrics:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:8000/api/v1/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana-oss:10.4.0
+    container_name: eventwatchdog-grafana
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/etc/grafana/dashboards/collection-health.json
+    volumes:
+      - grafanadata:/var/lib/grafana
+      - ./grafana/provisioning/datasources:/etc/grafana/provisioning/datasources:ro
+      - ./grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards:ro
+      - ./grafana/dashboards:/etc/grafana/dashboards:ro
+    depends_on:
+      victoriametrics:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://127.0.0.1:3000/api/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+
+volumes:
+  vmdata:
+  appdata:
+  grafanadata:

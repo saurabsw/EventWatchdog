@@ -1,0 +1,63 @@
+{
+  "annotations": { "list": [] },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 1,
+  "id": null,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "collapsed": false,
+      "gridPos": { "h": 10, "w": 24, "x": 0, "y": 0 },
+      "id": 1,
+      "title": "Observed Series vs Statistical Baseline & Prediction Bounds",
+      "type": "timeseries",
+      "targets": [
+        {
+          "datasource": { "type": "prometheus", "uid": "VictoriaMetrics" },
+          "expr": "watchdog_metric_value or payment_processing_latency_ms",
+          "legendFormat": "Actual Observed Value"
+        },
+        {
+          "datasource": { "type": "prometheus", "uid": "VictoriaMetrics" },
+          "expr": "watchdog_model_upper_bound",
+          "legendFormat": "Statistical Upper Bound"
+        },
+        {
+          "datasource": { "type": "prometheus", "uid": "VictoriaMetrics" },
+          "expr": "watchdog_model_baseline",
+          "legendFormat": "Expected Baseline (Median/Mean)"
+        },
+        {
+          "datasource": { "type": "prometheus", "uid": "VictoriaMetrics" },
+          "expr": "watchdog_model_lower_bound",
+          "legendFormat": "Statistical Lower Bound"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 10 },
+      "id": 2,
+      "title": "Statistical Anomaly Indicators (Out of Bounds)",
+      "type": "timeseries",
+      "targets": [
+        {
+          "datasource": { "type": "prometheus", "uid": "VictoriaMetrics" },
+          "expr": "watchdog_anomaly_breach_indicator or rate(watchdog_detections_total{detection_type=\"ANOMALY\"}[1m])",
+          "legendFormat": "Anomaly Breach Event"
+        }
+      ]
+    }
+  ],
+  "refresh": "5s",
+  "schemaVersion": 38,
+  "tags": ["observability", "anomalies", "statistical"],
+  "time": { "from": "now-15m", "to": "now" },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Anomaly Detection and Prediction Bounds",
+  "uid": "anomaly-detection",
+  "version": 2
+}

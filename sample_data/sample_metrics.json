@@ -1,0 +1,2406 @@
+{
+  "metrics": [
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:46:31.670255+00:00",
+      "value": 119.28,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:46:36.670255+00:00",
+      "value": 119.92,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:46:41.670255+00:00",
+      "value": 121.01,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:46:46.670255+00:00",
+      "value": 125.86,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:46:51.670255+00:00",
+      "value": 122.5,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:46:56.670255+00:00",
+      "value": 116.42,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:47:01.670255+00:00",
+      "value": 126.35,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:47:06.670255+00:00",
+      "value": 124.12,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:47:11.670255+00:00",
+      "value": 125.13,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:47:16.670255+00:00",
+      "value": 127.55,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:47:21.670255+00:00",
+      "value": 128.89,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:47:26.670255+00:00",
+      "value": 134.29,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:47:31.670255+00:00",
+      "value": 132.49,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:47:36.670255+00:00",
+      "value": 130.48,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:47:41.670255+00:00",
+      "value": 126.95,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:47:46.670255+00:00",
+      "value": 126.28,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:47:51.670255+00:00",
+      "value": 133.28,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:47:56.670255+00:00",
+      "value": 139.28,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:48:01.670255+00:00",
+      "value": 133.6,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:48:06.670255+00:00",
+      "value": 133.52,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:48:11.670255+00:00",
+      "value": 137.35,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:48:16.670255+00:00",
+      "value": 128.05,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:48:21.670255+00:00",
+      "value": 134.37,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:48:26.670255+00:00",
+      "value": 138.98,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:48:31.670255+00:00",
+      "value": 141.48,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:48:36.670255+00:00",
+      "value": 136.47,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:48:41.670255+00:00",
+      "value": 140.11,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:48:46.670255+00:00",
+      "value": 139.99,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:48:51.670255+00:00",
+      "value": 143.17,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:48:56.670255+00:00",
+      "value": 134.19,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:49:01.670255+00:00",
+      "value": 143.07,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:49:06.670255+00:00",
+      "value": 133.1,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:49:11.670255+00:00",
+      "value": 128.01,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:49:16.670255+00:00",
+      "value": 138.48,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:49:21.670255+00:00",
+      "value": 137.33,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:49:26.670255+00:00",
+      "value": 146.66,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:49:31.670255+00:00",
+      "value": 145.94,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:49:36.670255+00:00",
+      "value": 136.85,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:49:41.670255+00:00",
+      "value": 147.48,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:49:46.670255+00:00",
+      "value": 138.51,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:49:51.670255+00:00",
+      "value": 143.35,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:49:56.670255+00:00",
+      "value": 142.54,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:50:01.670255+00:00",
+      "value": 144.79,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:50:06.670255+00:00",
+      "value": 148.49,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:50:11.670255+00:00",
+      "value": 147.75,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:50:16.670255+00:00",
+      "value": 146.44,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:50:21.670255+00:00",
+      "value": 148.05,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:50:26.670255+00:00",
+      "value": 147.28,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:50:31.670255+00:00",
+      "value": 141.82,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:50:36.670255+00:00",
+      "value": 141.4,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:50:41.670255+00:00",
+      "value": 142.65,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:50:46.670255+00:00",
+      "value": 147.48,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:50:51.670255+00:00",
+      "value": 143.7,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:50:56.670255+00:00",
+      "value": 156.57,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:51:01.670255+00:00",
+      "value": 140.71,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:51:06.670255+00:00",
+      "value": 139.2,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:51:11.670255+00:00",
+      "value": 148.4,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:51:16.670255+00:00",
+      "value": 151.51,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:51:21.670255+00:00",
+      "value": 146.74,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:51:26.670255+00:00",
+      "value": 148.19,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:51:31.670255+00:00",
+      "value": 150.91,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:51:36.670255+00:00",
+      "value": 143.05,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:51:41.670255+00:00",
+      "value": 136.13,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:51:46.670255+00:00",
+      "value": 140.28,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:51:51.670255+00:00",
+      "value": 147.39,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:51:56.670255+00:00",
+      "value": 135.06,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:52:01.670255+00:00",
+      "value": 142.08,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:52:06.670255+00:00",
+      "value": 142.78,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:52:11.670255+00:00",
+      "value": 139.53,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:52:16.670255+00:00",
+      "value": 144.3,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:52:21.670255+00:00",
+      "value": 143.13,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:52:26.670255+00:00",
+      "value": 151.36,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:52:31.670255+00:00",
+      "value": 142.36,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:52:36.670255+00:00",
+      "value": 135.71,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:52:41.670255+00:00",
+      "value": 135.42,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:52:46.670255+00:00",
+      "value": 133.52,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:52:51.670255+00:00",
+      "value": 141.88,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:52:56.670255+00:00",
+      "value": 133.7,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:53:01.670255+00:00",
+      "value": 135.58,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:53:06.670255+00:00",
+      "value": 139.07,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:53:11.670255+00:00",
+      "value": 131.08,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:53:16.670255+00:00",
+      "value": 132.58,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:53:21.670255+00:00",
+      "value": 124.19,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:53:26.670255+00:00",
+      "value": 127.31,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:53:31.670255+00:00",
+      "value": 129.21,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:53:36.670255+00:00",
+      "value": 133.43,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:53:41.670255+00:00",
+      "value": 136.61,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:53:46.670255+00:00",
+      "value": 129.84,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:53:51.670255+00:00",
+      "value": 130.51,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:53:56.670255+00:00",
+      "value": 129.31,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:54:01.670255+00:00",
+      "value": 133.15,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:54:06.670255+00:00",
+      "value": 131.44,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:54:11.670255+00:00",
+      "value": 127.59,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:54:16.670255+00:00",
+      "value": 120.4,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:54:21.670255+00:00",
+      "value": 129.2,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:54:26.670255+00:00",
+      "value": 125.82,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:54:31.670255+00:00",
+      "value": 129.27,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:54:36.670255+00:00",
+      "value": 122.2,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:54:41.670255+00:00",
+      "value": 131.34,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:54:46.670255+00:00",
+      "value": 118.99,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:54:51.670255+00:00",
+      "value": 127.97,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:54:56.670255+00:00",
+      "value": 119.79,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:55:01.670255+00:00",
+      "value": 115.85,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:55:06.670255+00:00",
+      "value": 112.01,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:55:11.670255+00:00",
+      "value": 116.11,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:55:16.670255+00:00",
+      "value": 123.21,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:55:21.670255+00:00",
+      "value": 119.4,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:55:26.670255+00:00",
+      "value": 117.99,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:55:31.670255+00:00",
+      "value": 101.9,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:55:36.670255+00:00",
+      "value": 116.58,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:55:41.670255+00:00",
+      "value": 115.05,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:55:46.670255+00:00",
+      "value": 108.78,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:55:51.670255+00:00",
+      "value": 107.66,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:55:56.670255+00:00",
+      "value": 110.06,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:56:01.670255+00:00",
+      "value": 117.98,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:56:06.670255+00:00",
+      "value": 103.37,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:56:11.670255+00:00",
+      "value": 105.82,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:56:16.670255+00:00",
+      "value": 114.08,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:56:21.670255+00:00",
+      "value": 104.37,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:56:26.670255+00:00",
+      "value": 104.13,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:56:31.670255+00:00",
+      "value": 105.79,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:56:36.670255+00:00",
+      "value": 98.47,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:56:41.670255+00:00",
+      "value": 105.16,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:56:46.670255+00:00",
+      "value": 97.42,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:56:51.670255+00:00",
+      "value": 107.31,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:56:56.670255+00:00",
+      "value": 102.34,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:57:01.670255+00:00",
+      "value": 113.19,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:57:06.670255+00:00",
+      "value": 102.65,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:57:11.670255+00:00",
+      "value": 107.57,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:57:16.670255+00:00",
+      "value": 93.73,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:57:21.670255+00:00",
+      "value": 99.16,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:57:26.670255+00:00",
+      "value": 100.94,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:57:31.670255+00:00",
+      "value": 107.62,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:57:36.670255+00:00",
+      "value": 90.08,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:57:41.670255+00:00",
+      "value": 103.05,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:57:46.670255+00:00",
+      "value": 100.68,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:57:51.670255+00:00",
+      "value": 105.05,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:57:56.670255+00:00",
+      "value": 100.62,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:58:01.670255+00:00",
+      "value": 97.02,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:58:06.670255+00:00",
+      "value": 93.87,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:58:11.670255+00:00",
+      "value": 89.98,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:58:16.670255+00:00",
+      "value": 96.97,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:58:21.670255+00:00",
+      "value": 94.83,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:58:26.670255+00:00",
+      "value": 105.7,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:58:31.670255+00:00",
+      "value": 92.39,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:58:36.670255+00:00",
+      "value": 96.91,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:58:41.670255+00:00",
+      "value": 87.35,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:58:46.670255+00:00",
+      "value": 93.13,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:58:51.670255+00:00",
+      "value": 96.36,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:58:56.670255+00:00",
+      "value": 99.13,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:59:01.670255+00:00",
+      "value": 102.24,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:59:06.670255+00:00",
+      "value": 94.79,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:59:11.670255+00:00",
+      "value": 89.46,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:59:16.670255+00:00",
+      "value": 97.4,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:59:21.670255+00:00",
+      "value": 97.78,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:59:26.670255+00:00",
+      "value": 97.77,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:59:31.670255+00:00",
+      "value": 91.94,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:59:36.670255+00:00",
+      "value": 101.27,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:59:41.670255+00:00",
+      "value": 96.22,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:59:46.670255+00:00",
+      "value": 99.49,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:59:51.670255+00:00",
+      "value": 102.59,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T15:59:56.670255+00:00",
+      "value": 99.52,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:00:01.670255+00:00",
+      "value": 98.19,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:00:06.670255+00:00",
+      "value": 107.82,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:00:11.670255+00:00",
+      "value": 98.6,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:00:16.670255+00:00",
+      "value": 96.25,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:00:21.670255+00:00",
+      "value": 98.65,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:00:26.670255+00:00",
+      "value": 105.9,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:00:31.670255+00:00",
+      "value": 99.49,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:00:36.670255+00:00",
+      "value": 101.92,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:00:41.670255+00:00",
+      "value": 105.75,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:00:46.670255+00:00",
+      "value": 97.68,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:00:51.670255+00:00",
+      "value": 92.1,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:00:56.670255+00:00",
+      "value": 102.74,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:01:01.670255+00:00",
+      "value": 102.92,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:01:06.670255+00:00",
+      "value": 99.28,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:01:11.670255+00:00",
+      "value": 107.24,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:01:16.670255+00:00",
+      "value": 106.51,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:01:21.670255+00:00",
+      "value": 99.09,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:01:26.670255+00:00",
+      "value": 107.27,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:01:31.670255+00:00",
+      "value": 104.32,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:01:36.670255+00:00",
+      "value": 98.53,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:01:41.670255+00:00",
+      "value": 108.87,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:01:46.670255+00:00",
+      "value": 107.05,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:01:51.670255+00:00",
+      "value": 104.23,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:01:56.670255+00:00",
+      "value": 111.26,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:02:01.670255+00:00",
+      "value": 111.8,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:02:06.670255+00:00",
+      "value": 107.18,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:02:11.670255+00:00",
+      "value": 112.8,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:02:16.670255+00:00",
+      "value": 116.61,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:02:21.670255+00:00",
+      "value": 423.81,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:02:26.670255+00:00",
+      "value": 442.66,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:02:31.670255+00:00",
+      "value": 426.95,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:02:36.670255+00:00",
+      "value": 419.0,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:02:41.670255+00:00",
+      "value": 419.91,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:02:46.670255+00:00",
+      "value": 415.58,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:02:51.670255+00:00",
+      "value": 415.09,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:02:56.670255+00:00",
+      "value": 420.62,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:03:01.670255+00:00",
+      "value": 422.02,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    },
+    {
+      "metric": "payment_processing_latency_ms",
+      "timestamp": "2026-10-11T16:03:06.670255+00:00",
+      "value": 440.02,
+      "labels": {
+        "service": "payment-gateway",
+        "environment": "production",
+        "source": "sample_generator"
+      }
+    }
+  ],
+  "logs": [
+    {
+      "timestamp": "2026-10-11T16:00:41.671364+00:00",
+      "level": "INFO",
+      "service": "payment-gateway",
+      "message": "Successfully completed request /orders/v1 (duration_ms=32.14, status=200)",
+      "status_code": 200,
+      "duration_ms": 32.14
+    },
+    {
+      "timestamp": "2026-10-11T16:00:44.671364+00:00",
+      "level": "ERROR",
+      "service": "payment-gateway",
+      "message": "HTTP 504 internal error while calling downstream for /checkout",
+      "status_code": 504,
+      "duration_ms": 806.31
+    },
+    {
+      "timestamp": "2026-10-11T16:00:47.671364+00:00",
+      "level": "ERROR",
+      "service": "auth-service",
+      "message": "HTTP 504 internal error while calling downstream for /login",
+      "status_code": 504,
+      "duration_ms": 1022.42
+    },
+    {
+      "timestamp": "2026-10-11T16:00:50.671364+00:00",
+      "level": "INFO",
+      "service": "inventory-service",
+      "message": "Successfully completed request /login (duration_ms=46.44, status=200)",
+      "status_code": 200,
+      "duration_ms": 46.44
+    },
+    {
+      "timestamp": "2026-10-11T16:00:53.671364+00:00",
+      "level": "INFO",
+      "service": "payment-gateway",
+      "message": "Successfully completed request /login (duration_ms=63.87, status=200)",
+      "status_code": 200,
+      "duration_ms": 63.87
+    },
+    {
+      "timestamp": "2026-10-11T16:00:56.671364+00:00",
+      "level": "INFO",
+      "service": "auth-service",
+      "message": "Successfully completed request /login (duration_ms=82.0, status=200)",
+      "status_code": 200,
+      "duration_ms": 82.0
+    },
+    {
+      "timestamp": "2026-10-11T16:00:59.671364+00:00",
+      "level": "INFO",
+      "service": "payment-gateway",
+      "message": "Successfully completed request /items/query (duration_ms=21.77, status=200)",
+      "status_code": 200,
+      "duration_ms": 21.77
+    },
+    {
+      "timestamp": "2026-10-11T16:01:02.671364+00:00",
+      "level": "INFO",
+      "service": "order-api",
+      "message": "Successfully completed request /checkout (duration_ms=66.08, status=200)",
+      "status_code": 200,
+      "duration_ms": 66.08
+    },
+    {
+      "timestamp": "2026-10-11T16:01:05.671364+00:00",
+      "level": "INFO",
+      "service": "inventory-service",
+      "message": "Successfully completed request /checkout (duration_ms=53.64, status=200)",
+      "status_code": 200,
+      "duration_ms": 53.64
+    },
+    {
+      "timestamp": "2026-10-11T16:01:08.671364+00:00",
+      "level": "INFO",
+      "service": "order-api",
+      "message": "Successfully completed request /login (duration_ms=64.32, status=200)",
+      "status_code": 200,
+      "duration_ms": 64.32
+    },
+    {
+      "timestamp": "2026-10-11T16:01:11.671364+00:00",
+      "level": "ERROR",
+      "service": "auth-service",
+      "message": "HTTP 500 internal error while calling downstream for /orders/v1",
+      "status_code": 500,
+      "duration_ms": 1326.38
+    },
+    {
+      "timestamp": "2026-10-11T16:01:14.671364+00:00",
+      "level": "INFO",
+      "service": "inventory-service",
+      "message": "Successfully completed request /orders/v1 (duration_ms=46.74, status=200)",
+      "status_code": 200,
+      "duration_ms": 46.74
+    },
+    {
+      "timestamp": "2026-10-11T16:01:17.671364+00:00",
+      "level": "INFO",
+      "service": "auth-service",
+      "message": "Successfully completed request /orders/v1 (duration_ms=39.87, status=200)",
+      "status_code": 200,
+      "duration_ms": 39.87
+    },
+    {
+      "timestamp": "2026-10-11T16:01:20.671364+00:00",
+      "level": "INFO",
+      "service": "payment-gateway",
+      "message": "Successfully completed request /login (duration_ms=52.39, status=200)",
+      "status_code": 200,
+      "duration_ms": 52.39
+    },
+    {
+      "timestamp": "2026-10-11T16:01:23.671364+00:00",
+      "level": "INFO",
+      "service": "inventory-service",
+      "message": "Successfully completed request /items/query (duration_ms=33.9, status=200)",
+      "status_code": 200,
+      "duration_ms": 33.9
+    },
+    {
+      "timestamp": "2026-10-11T16:01:26.671364+00:00",
+      "level": "INFO",
+      "service": "auth-service",
+      "message": "Successfully completed request /orders/v1 (duration_ms=74.0, status=200)",
+      "status_code": 200,
+      "duration_ms": 74.0
+    },
+    {
+      "timestamp": "2026-10-11T16:01:29.671364+00:00",
+      "level": "INFO",
+      "service": "auth-service",
+      "message": "Successfully completed request /checkout (duration_ms=71.35, status=200)",
+      "status_code": 200,
+      "duration_ms": 71.35
+    },
+    {
+      "timestamp": "2026-10-11T16:01:32.671364+00:00",
+      "level": "INFO",
+      "service": "payment-gateway",
+      "message": "Successfully completed request /login (duration_ms=78.92, status=200)",
+      "status_code": 200,
+      "duration_ms": 78.92
+    },
+    {
+      "timestamp": "2026-10-11T16:01:35.671364+00:00",
+      "level": "INFO",
+      "service": "order-api",
+      "message": "Successfully completed request /login (duration_ms=60.88, status=200)",
+      "status_code": 200,
+      "duration_ms": 60.88
+    },
+    {
+      "timestamp": "2026-10-11T16:01:38.671364+00:00",
+      "level": "INFO",
+      "service": "inventory-service",
+      "message": "Successfully completed request /login (duration_ms=33.54, status=200)",
+      "status_code": 200,
+      "duration_ms": 33.54
+    },
+    {
+      "timestamp": "2026-10-11T16:01:41.671364+00:00",
+      "level": "INFO",
+      "service": "order-api",
+      "message": "Successfully completed request /items/query (duration_ms=77.85, status=200)",
+      "status_code": 200,
+      "duration_ms": 77.85
+    },
+    {
+      "timestamp": "2026-10-11T16:01:44.671364+00:00",
+      "level": "INFO",
+      "service": "auth-service",
+      "message": "Successfully completed request /login (duration_ms=50.67, status=200)",
+      "status_code": 200,
+      "duration_ms": 50.67
+    },
+    {
+      "timestamp": "2026-10-11T16:01:47.671364+00:00",
+      "level": "ERROR",
+      "service": "payment-gateway",
+      "message": "HTTP 500 internal error while calling downstream for /checkout",
+      "status_code": 500,
+      "duration_ms": 1052.94
+    },
+    {
+      "timestamp": "2026-10-11T16:01:50.671364+00:00",
+      "level": "INFO",
+      "service": "inventory-service",
+      "message": "Successfully completed request /checkout (duration_ms=41.93, status=200)",
+      "status_code": 200,
+      "duration_ms": 41.93
+    },
+    {
+      "timestamp": "2026-10-11T16:01:53.671364+00:00",
+      "level": "INFO",
+      "service": "inventory-service",
+      "message": "Successfully completed request /orders/v1 (duration_ms=82.98, status=200)",
+      "status_code": 200,
+      "duration_ms": 82.98
+    },
+    {
+      "timestamp": "2026-10-11T16:01:56.671364+00:00",
+      "level": "INFO",
+      "service": "payment-gateway",
+      "message": "Successfully completed request /checkout (duration_ms=62.72, status=200)",
+      "status_code": 200,
+      "duration_ms": 62.72
+    },
+    {
+      "timestamp": "2026-10-11T16:01:59.671364+00:00",
+      "level": "INFO",
+      "service": "order-api",
+      "message": "Successfully completed request /orders/v1 (duration_ms=22.81, status=200)",
+      "status_code": 200,
+      "duration_ms": 22.81
+    },
+    {
+      "timestamp": "2026-10-11T16:02:02.671364+00:00",
+      "level": "INFO",
+      "service": "inventory-service",
+      "message": "Successfully completed request /checkout (duration_ms=81.77, status=200)",
+      "status_code": 200,
+      "duration_ms": 81.77
+    },
+    {
+      "timestamp": "2026-10-11T16:02:05.671364+00:00",
+      "level": "INFO",
+      "service": "order-api",
+      "message": "Successfully completed request /login (duration_ms=50.54, status=200)",
+      "status_code": 200,
+      "duration_ms": 50.54
+    },
+    {
+      "timestamp": "2026-10-11T16:02:08.671364+00:00",
+      "level": "ERROR",
+      "service": "order-api",
+      "message": "HTTP 500 internal error while calling downstream for /login",
+      "status_code": 500,
+      "duration_ms": 748.7
+    },
+    {
+      "timestamp": "2026-10-11T16:02:11.671364+00:00",
+      "level": "ERROR",
+      "service": "payment-gateway",
+      "message": "HTTP 502 internal error while calling downstream for /orders/v1",
+      "status_code": 502,
+      "duration_ms": 323.37
+    },
+    {
+      "timestamp": "2026-10-11T16:02:14.671364+00:00",
+      "level": "INFO",
+      "service": "order-api",
+      "message": "Successfully completed request /login (duration_ms=19.05, status=200)",
+      "status_code": 200,
+      "duration_ms": 19.05
+    },
+    {
+      "timestamp": "2026-10-11T16:02:17.671364+00:00",
+      "level": "INFO",
+      "service": "payment-gateway",
+      "message": "Successfully completed request /checkout (duration_ms=66.23, status=200)",
+      "status_code": 200,
+      "duration_ms": 66.23
+    },
+    {
+      "timestamp": "2026-10-11T16:02:20.671364+00:00",
+      "level": "INFO",
+      "service": "auth-service",
+      "message": "Successfully completed request /login (duration_ms=61.18, status=200)",
+      "status_code": 200,
+      "duration_ms": 61.18
+    },
+    {
+      "timestamp": "2026-10-11T16:02:23.671364+00:00",
+      "level": "INFO",
+      "service": "auth-service",
+      "message": "Successfully completed request /orders/v1 (duration_ms=51.94, status=200)",
+      "status_code": 200,
+      "duration_ms": 51.94
+    },
+    {
+      "timestamp": "2026-10-11T16:02:26.671364+00:00",
+      "level": "INFO",
+      "service": "auth-service",
+      "message": "Successfully completed request /login (duration_ms=64.91, status=200)",
+      "status_code": 200,
+      "duration_ms": 64.91
+    },
+    {
+      "timestamp": "2026-10-11T16:02:29.671364+00:00",
+      "level": "INFO",
+      "service": "order-api",
+      "message": "Successfully completed request /items/query (duration_ms=77.97, status=200)",
+      "status_code": 200,
+      "duration_ms": 77.97
+    },
+    {
+      "timestamp": "2026-10-11T16:02:32.671364+00:00",
+      "level": "INFO",
+      "service": "auth-service",
+      "message": "Successfully completed request /login (duration_ms=19.48, status=200)",
+      "status_code": 200,
+      "duration_ms": 19.48
+    },
+    {
+      "timestamp": "2026-10-11T16:02:35.671364+00:00",
+      "level": "ERROR",
+      "service": "auth-service",
+      "message": "HTTP 500 internal error while calling downstream for /login",
+      "status_code": 500,
+      "duration_ms": 385.19
+    },
+    {
+      "timestamp": "2026-10-11T16:02:38.671364+00:00",
+      "level": "INFO",
+      "service": "auth-service",
+      "message": "Successfully completed request /checkout (duration_ms=78.38, status=200)",
+      "status_code": 200,
+      "duration_ms": 78.38
+    },
+    {
+      "timestamp": "2026-10-11T16:02:41.671364+00:00",
+      "level": "INFO",
+      "service": "payment-gateway",
+      "message": "Successfully completed request /login (duration_ms=34.49, status=200)",
+      "status_code": 200,
+      "duration_ms": 34.49
+    },
+    {
+      "timestamp": "2026-10-11T16:02:44.671364+00:00",
+      "level": "INFO",
+      "service": "auth-service",
+      "message": "Successfully completed request /items/query (duration_ms=32.01, status=200)",
+      "status_code": 200,
+      "duration_ms": 32.01
+    },
+    {
+      "timestamp": "2026-10-11T16:02:47.671364+00:00",
+      "level": "INFO",
+      "service": "inventory-service",
+      "message": "Successfully completed request /login (duration_ms=21.6, status=200)",
+      "status_code": 200,
+      "duration_ms": 21.6
+    },
+    {
+      "timestamp": "2026-10-11T16:02:50.671364+00:00",
+      "level": "INFO",
+      "service": "order-api",
+      "message": "Successfully completed request /items/query (duration_ms=43.78, status=200)",
+      "status_code": 200,
+      "duration_ms": 43.78
+    },
+    {
+      "timestamp": "2026-10-11T16:02:53.671364+00:00",
+      "level": "INFO",
+      "service": "payment-gateway",
+      "message": "Successfully completed request /checkout (duration_ms=19.24, status=200)",
+      "status_code": 200,
+      "duration_ms": 19.24
+    },
+    {
+      "timestamp": "2026-10-11T16:02:56.671364+00:00",
+      "level": "INFO",
+      "service": "payment-gateway",
+      "message": "Successfully completed request /login (duration_ms=28.41, status=200)",
+      "status_code": 200,
+      "duration_ms": 28.41
+    },
+    {
+      "timestamp": "2026-10-11T16:02:59.671364+00:00",
+      "level": "INFO",
+      "service": "auth-service",
+      "message": "Successfully completed request /items/query (duration_ms=27.84, status=200)",
+      "status_code": 200,
+      "duration_ms": 27.84
+    },
+    {
+      "timestamp": "2026-10-11T16:03:02.671364+00:00",
+      "level": "INFO",
+      "service": "payment-gateway",
+      "message": "Successfully completed request /items/query (duration_ms=71.56, status=200)",
+      "status_code": 200,
+      "duration_ms": 71.56
+    },
+    {
+      "timestamp": "2026-10-11T16:03:05.671364+00:00",
+      "level": "INFO",
+      "service": "payment-gateway",
+      "message": "Successfully completed request /checkout (duration_ms=60.65, status=200)",
+      "status_code": 200,
+      "duration_ms": 60.65
+    },
+    {
+      "timestamp": "2026-10-11T16:03:08.671364+00:00",
+      "level": "INFO",
+      "service": "payment-gateway",
+      "message": "Successfully completed request /checkout (duration_ms=79.85, status=200)",
+      "status_code": 200,
+      "duration_ms": 79.85
+    }
+  ]
+}
