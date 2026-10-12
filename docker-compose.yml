@@ -23,7 +23,7 @@ services:
       dockerfile: Dockerfile
     container_name: eventwatchdog-api
     ports:
-      - "127.0.0.1:8000:8000"
+      - "8000:8000"
     environment:
       - APP_HOST=0.0.0.0
       - APP_PORT=8000
@@ -47,11 +47,13 @@ services:
     image: grafana/grafana-oss:10.4.0
     container_name: eventwatchdog-grafana
     ports:
-      - "127.0.0.1:3000:3000"
+      - "3000:3000"
     environment:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin
       - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Viewer
       - GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/etc/grafana/dashboards/collection-health.json
     volumes:
       - grafanadata:/var/lib/grafana

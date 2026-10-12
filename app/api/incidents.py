@@ -44,6 +44,15 @@ def acknowledge_incident(incident_id: int, db: Session = Depends(get_db)):
     return IncidentResponse.from_orm_model(inc)
 
 
+@router.post("/{incident_id}/resolve", response_model=IncidentResponse)
+def resolve_incident(incident_id: int, db: Session = Depends(get_db)):
+    """Manually resolve an active incident."""
+    inc = incident_service.resolve_incident(db, incident_id)
+    if not inc:
+        raise HTTPException(status_code=404, detail="Incident not found or already resolved")
+    return IncidentResponse.from_orm_model(inc)
+
+
 @router.get("/{incident_id}/audit")
 def get_incident_audit(incident_id: int, db: Session = Depends(get_db)):
     """Retrieve audit trail for a specific incident."""

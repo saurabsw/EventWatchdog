@@ -19,7 +19,10 @@ class VictoriaMetricsClient:
         """Format a MetricSample into Prometheus text line format."""
         labels_str = ""
         if sample.labels:
-            pairs = [f'{k}="{v}"' for k, v in sorted(sample.labels.items())]
+            pairs = []
+            for k, v in sorted(sample.labels.items()):
+                clean_v = str(v).replace("\\", "\\\\").replace('"', '\\"').replace("\n", " ").replace("\r", "")
+                pairs.append(f'{k}="{clean_v}"')
             labels_str = "{" + ",".join(pairs) + "}"
         ts_ms = int(sample.timestamp.replace(tzinfo=timezone.utc).timestamp() * 1000)
         return f"{sample.metric}{labels_str} {sample.value} {ts_ms}"

@@ -9,14 +9,57 @@
   "panels": [
     {
       "collapsed": false,
-      "gridPos": { "h": 10, "w": 24, "x": 0, "y": 0 },
+      "gridPos": { "h": 12, "w": 24, "x": 0, "y": 0 },
       "id": 1,
       "title": "Observed Series vs Statistical Baseline & Prediction Bounds",
       "type": "timeseries",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "drawStyle": "line",
+            "lineInterpolation": "linear",
+            "lineWidth": 2,
+            "pointSize": 5,
+            "showPoints": "auto",
+            "spanNulls": true
+          }
+        },
+        "overrides": [
+          {
+            "matcher": { "id": "byName", "options": "Statistical Upper Bound" },
+            "properties": [
+              { "id": "color", "value": { "fixedColor": "semi-dark-red", "mode": "fixed" } },
+              { "id": "custom.lineStyle", "value": { "dash": [10, 10], "fill": "dash" } }
+            ]
+          },
+          {
+            "matcher": { "id": "byName", "options": "Statistical Lower Bound" },
+            "properties": [
+              { "id": "color", "value": { "fixedColor": "semi-dark-blue", "mode": "fixed" } },
+              { "id": "custom.lineStyle", "value": { "dash": [10, 10], "fill": "dash" } }
+            ]
+          },
+          {
+            "matcher": { "id": "byName", "options": "Expected Baseline (Median/Mean)" },
+            "properties": [
+              { "id": "color", "value": { "fixedColor": "semi-dark-purple", "mode": "fixed" } },
+              { "id": "custom.lineStyle", "value": { "dash": [4, 4], "fill": "dash" } }
+            ]
+          },
+          {
+            "matcher": { "id": "byName", "options": "Actual Observed Value" },
+            "properties": [
+              { "id": "color", "value": { "fixedColor": "semi-dark-green", "mode": "fixed" } },
+              { "id": "custom.lineWidth", "value": 3 },
+              { "id": "custom.showPoints", "value": "always" }
+            ]
+          }
+        ]
+      },
       "targets": [
         {
           "datasource": { "type": "prometheus", "uid": "VictoriaMetrics" },
-          "expr": "watchdog_metric_value or payment_processing_latency_ms",
+          "expr": "watchdog_metric_value or payment_gateway_response_ms or payment_processing_latency_ms",
           "legendFormat": "Actual Observed Value"
         },
         {
@@ -38,10 +81,20 @@
     },
     {
       "collapsed": false,
-      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 10 },
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 12 },
       "id": 2,
-      "title": "Statistical Anomaly Indicators (Out of Bounds)",
+      "title": "Statistical Anomaly Indicators (Out of Bounds Breaches)",
       "type": "timeseries",
+      "fieldConfig": {
+        "defaults": {
+          "color": { "fixedColor": "red", "mode": "fixed" },
+          "custom": {
+            "drawStyle": "bars",
+            "fillOpacity": 80,
+            "gradientMode": "none"
+          }
+        }
+      },
       "targets": [
         {
           "datasource": { "type": "prometheus", "uid": "VictoriaMetrics" },
@@ -54,10 +107,10 @@
   "refresh": "5s",
   "schemaVersion": 38,
   "tags": ["observability", "anomalies", "statistical"],
-  "time": { "from": "now-15m", "to": "now" },
+  "time": { "from": "now-30m", "to": "now" },
   "timepicker": {},
   "timezone": "browser",
   "title": "Anomaly Detection and Prediction Bounds",
   "uid": "anomaly-detection",
-  "version": 2
+  "version": 3
 }

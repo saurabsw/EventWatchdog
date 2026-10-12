@@ -64,25 +64,35 @@ class IncidentService:
         fingerprint = generate_fingerprint(detection_type, source_id, metric_name, labels)
         now = datetime.now(timezone.utc)
 
-        incident = db.query(Incident).filter(
-            Incident.fingerprint == fingerprint,
-            Incident.state.in_(["OPEN", "ACKNOWLEDGED"])
-        ).first()
+        incident = db.query(Incident).filter(Incident.fingerprint == fingerprint).first()
 
         if incident:
-            # Deduplicate continuing breach: increment count and update last_seen
+            was_resolved = (incident.state == "RESOLVED")
+            if was_resolved:
+                incident.state = "OPEN"
+                incident.acknowledged_at = None
+                incident.resolved_at = None
+                action_name = "REOPEN"
+            else:
+                action_name = "BREACH_RECURRENCE"
+
+            # Increment count, update latest observation and reset recovery counter
             incident.occurrence_count += 1
             incident.last_seen_at = now
             incident.latest_value = observed_value
+            incident.summary = summary
+            incident.severity = severity
             incident.consecutive_normal_count = 0  # reset recovery counter
             db.commit()
             db.refresh(incident)
 
-            # Audit log for repeated occurrence
+            # Audit log for breach
             self._audit(
-                db, "INCIDENT", str(incident.id), "BREACH_RECURRENCE",
+                db, "INCIDENT", str(incident.id), action_name,
                 {"occurrence_count": incident.occurrence_count, "value": observed_value}
             )
+            if was_resolved:
+                notification_adapter.send_notification("REOPENED", incident)
             return incident
 
         # Create new incident
@@ -126,6 +136,21 @@ class IncidentService:
 
         self._audit(db, "INCIDENT", str(incident.id), "ACKNOWLEDGE", {"state": incident.state})
         notification_adapter.send_notification("ACKNOWLEDGED", incident)
+        return incident
+
+    def resolve_incident(self, db: Session, incident_id: int) -> Optional[Incident]:
+        """Manually resolve an active incident."""
+        incident = db.query(Incident).filter(Incident.id == incident_id).first()
+        if not incident or incident.state == "RESOLVED":
+            return None
+
+        incident.state = "RESOLVED"
+        incident.resolved_at = datetime.now(timezone.utc)
+        db.commit()
+        db.refresh(incident)
+
+        self._audit(db, "INCIDENT", str(incident.id), "RESOLVE", {"manual": True, "state": incident.state})
+        notification_adapter.send_notification("RESOLVED", incident)
         return incident
 
     def process_normal(

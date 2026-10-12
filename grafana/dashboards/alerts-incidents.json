@@ -9,85 +9,207 @@
   "panels": [
     {
       "collapsed": false,
-      "gridPos": { "h": 6, "w": 6, "x": 0, "y": 0 },
+      "gridPos": { "h": 5, "w": 6, "x": 0, "y": 0 },
       "id": 1,
-      "title": "Open Incidents (TSDB Metric)",
+      "title": "Open Incidents",
       "type": "stat",
+      "fieldConfig": {
+        "defaults": {
+          "color": { "fixedColor": "red", "mode": "fixed" },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "green", "value": null },
+              { "color": "red", "value": 1 }
+            ]
+          }
+        }
+      },
       "targets": [
         {
           "datasource": { "type": "prometheus", "uid": "VictoriaMetrics" },
-          "expr": "watchdog_incidents_active{state=\"OPEN\"} or 0",
-          "legendFormat": "Open Incidents"
+          "expr": "sum(watchdog_incidents_active{state=\"OPEN\"}) or 0",
+          "legendFormat": "Open"
         }
       ]
     },
     {
       "collapsed": false,
-      "gridPos": { "h": 6, "w": 6, "x": 6, "y": 0 },
+      "gridPos": { "h": 5, "w": 6, "x": 6, "y": 0 },
       "id": 2,
       "title": "Acknowledged Incidents",
       "type": "stat",
+      "fieldConfig": {
+        "defaults": {
+          "color": { "fixedColor": "orange", "mode": "fixed" }
+        }
+      },
       "targets": [
         {
           "datasource": { "type": "prometheus", "uid": "VictoriaMetrics" },
-          "expr": "watchdog_incidents_active{state=\"ACKNOWLEDGED\"} or 0",
+          "expr": "sum(watchdog_incidents_active{state=\"ACKNOWLEDGED\"}) or 0",
           "legendFormat": "Acknowledged"
         }
       ]
     },
     {
       "collapsed": false,
-      "gridPos": { "h": 6, "w": 6, "x": 12, "y": 0 },
+      "gridPos": { "h": 5, "w": 6, "x": 12, "y": 0 },
       "id": 3,
       "title": "Critical Severity Active",
       "type": "stat",
+      "fieldConfig": {
+        "defaults": {
+          "color": { "fixedColor": "semi-dark-red", "mode": "fixed" }
+        }
+      },
       "targets": [
         {
           "datasource": { "type": "prometheus", "uid": "VictoriaMetrics" },
-          "expr": "sum(watchdog_incidents_active{severity=\"CRITICAL\"}) or 0",
-          "legendFormat": "Critical"
+          "expr": "sum(watchdog_incidents_active{severity=\"CRITICAL\",state=~\"OPEN|ACKNOWLEDGED\"}) or 0",
+          "legendFormat": "Critical Active"
         }
       ]
     },
     {
       "collapsed": false,
-      "gridPos": { "h": 6, "w": 6, "x": 18, "y": 0 },
+      "gridPos": { "h": 5, "w": 6, "x": 18, "y": 0 },
       "id": 4,
-      "title": "Total Detections Rate",
+      "title": "Resolved Incidents (Historical)",
       "type": "stat",
+      "fieldConfig": {
+        "defaults": {
+          "color": { "fixedColor": "green", "mode": "fixed" }
+        }
+      },
       "targets": [
         {
           "datasource": { "type": "prometheus", "uid": "VictoriaMetrics" },
-          "expr": "sum(rate(watchdog_detections_total[5m])) * 60 or 0",
-          "legendFormat": "Events / min"
+          "expr": "sum(watchdog_incidents_active{state=\"RESOLVED\"}) or 0",
+          "legendFormat": "Resolved"
         }
       ]
     },
     {
       "collapsed": false,
-      "gridPos": { "h": 10, "w": 16, "x": 0, "y": 6 },
+      "gridPos": { "h": 8, "w": 16, "x": 0, "y": 5 },
       "id": 5,
       "title": "Detection Breach Trends Over Time",
       "type": "timeseries",
       "targets": [
         {
           "datasource": { "type": "prometheus", "uid": "VictoriaMetrics" },
-          "expr": "rate(watchdog_detections_total[1m]) * 60",
-          "legendFormat": "{{metric_name}} ({{detection_type}})"
+          "expr": "rate(watchdog_detections_total[1m]) * 60 or rate(watchdog_incidents_active[1m])",
+          "legendFormat": "{{detection_type}}"
         }
       ]
     },
     {
       "collapsed": false,
-      "gridPos": { "h": 10, "w": 8, "x": 16, "y": 6 },
+      "gridPos": { "h": 8, "w": 8, "x": 16, "y": 5 },
       "id": 6,
-      "title": "Severity Distribution",
+      "title": "Incident State Distribution",
       "type": "piechart",
       "targets": [
         {
           "datasource": { "type": "prometheus", "uid": "VictoriaMetrics" },
-          "expr": "watchdog_incidents_active",
-          "legendFormat": "{{severity}} - {{state}}"
+          "expr": "watchdog_incidents_active > 0",
+          "legendFormat": "{{state}} ({{severity}})"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "gridPos": { "h": 11, "w": 24, "x": 0, "y": 13 },
+      "id": 7,
+      "title": "Alert & Incident Register (Active & Closed Alerts)",
+      "type": "table",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": "auto",
+            "cellOptions": { "type": "auto" },
+            "inspect": false
+          }
+        },
+        "overrides": [
+          {
+            "matcher": { "id": "byName", "options": "state" },
+            "properties": [
+              {
+                "id": "custom.cellOptions",
+                "value": { "mode": "basic", "type": "color-background" }
+              },
+              {
+                "id": "mappings",
+                "value": [
+                  { "options": { "OPEN": { "color": "red", "index": 0 } }, "type": "value" },
+                  { "options": { "ACKNOWLEDGED": { "color": "orange", "index": 1 } }, "type": "value" },
+                  { "options": { "RESOLVED": { "color": "green", "index": 2 } }, "type": "value" }
+                ]
+              }
+            ]
+          },
+          {
+            "matcher": { "id": "byName", "options": "severity" },
+            "properties": [
+              {
+                "id": "custom.cellOptions",
+                "value": { "mode": "basic", "type": "color-background" }
+              },
+              {
+                "id": "mappings",
+                "value": [
+                  { "options": { "CRITICAL": { "color": "dark-red", "index": 0 } }, "type": "value" },
+                  { "options": { "WARNING": { "color": "dark-orange", "index": 1 } }, "type": "value" },
+                  { "options": { "INFO": { "color": "blue", "index": 2 } }, "type": "value" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "targets": [
+        {
+          "datasource": { "type": "prometheus", "uid": "VictoriaMetrics" },
+          "expr": "watchdog_incident_info",
+          "format": "table",
+          "instant": true
+        }
+      ],
+      "transformations": [
+        {
+          "id": "labelsToFields",
+          "options": { "mode": "columns" }
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "__name__": true,
+              "instance": true,
+              "job": true
+            },
+            "indexByName": {
+              "id": 0,
+              "detection_type": 1,
+              "metric_name": 2,
+              "severity": 3,
+              "state": 4,
+              "Value": 5,
+              "summary": 6
+            },
+            "renameByName": {
+              "id": "ID",
+              "detection_type": "Type",
+              "metric_name": "Target Metric",
+              "severity": "Severity",
+              "state": "Status",
+              "Value": "Observed Val",
+              "summary": "Summary Context"
+            }
+          }
         }
       ]
     }
@@ -95,10 +217,10 @@
   "refresh": "5s",
   "schemaVersion": 38,
   "tags": ["observability", "incidents", "alerts"],
-  "time": { "from": "now-15m", "to": "now" },
+  "time": { "from": "now-30m", "to": "now" },
   "timepicker": {},
   "timezone": "browser",
   "title": "Alerts and Incidents",
   "uid": "alerts-incidents",
-  "version": 2
+  "version": 3
 }
